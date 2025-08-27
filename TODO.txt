@@ -1,0 +1,16 @@
+Tabs:
+_ Bio (info and contact)
+_ Personal Resume
+_ Projects and Developments
+_ School Details (More than just resume)
+_ Games (from Game design)
+_ Other interests
+    - Fiber art
+    - hobbies
+
+Things to include:
+- Pictures
+    - VT Logo
+    - Personal Pictures
+    - Any work pics
+- Testimonials?
