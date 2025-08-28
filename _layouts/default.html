@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Aaron Kanefsky</title>
+
+  <!-- SEO -->
+  <meta name="description" content="{{ page.description | default: 'Aaron Kanefsky Portfolio Website' }}">
+  <meta property="og:title" content="{{ page.title }} | Aaron Kanefsky">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:description" content="{{ page.description | default: 'Explore projects, resume, and more.' }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo"><a href="{{ '/' | relative_url }}">Aaron Kanefsky</a></div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/projects.html' | relative_url }}">Projects</a></li>
+          <li><a href="{{ '/resume.html' | relative_url }}">Resume</a></li>
+          <li><a href="{{ '/experience.html' | relative_url }}">Experience</a></li>
+          <li><a href="{{ '/bio.html' | relative_url }}">Bio</a></li>
+          <li><a href="{{ '/games.html' | relative_url }}">Games</a></li>
+          <li><a href="{{ '/school.html' | relative_url }}">School</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content container">
+    <aside class="sidebar">
+      <img src="{{ '/images/ProfilePicture.jpg' | relative_url }}" alt="Aaron Kanefsky" class="profile-img">
+      <h3>Aaron Kanefsky</h3>
+      <p>Engineering Student | Developer | Creator</p>
+      <ul class="social-links">
+        <li><a href="mailto:rodgers12ak@gmail.com"><i class="fa fa-envelope"></i> Email</a></li>
+        <li><a href="https://github.com/aaronkanefsky"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.thingiverse.com/doublea12/designs"><i class="fa fa-cube"></i> Thingiverse</a></li>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      {{ content }}
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ site.time | date: "%Y" }} Aaron Kanefsky. Built with GitHub Pages + Jekyll.</p>
+    </div>
+  </footer>
+</body>
+</html>
